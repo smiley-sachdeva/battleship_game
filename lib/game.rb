@@ -59,8 +59,6 @@ class Game
     end
   
     def place_ships(grid, ships)
-        puts ships.inspect
-        puts grid.inspect
         ships.each do |(x,y)| 
             grid[x][y] = 'B'
         end
@@ -111,8 +109,3 @@ class Game
       end
     end
 end
-  
-  # Usage
-  game = Game.new("input.txt")
-  game.play_game
-  
