@@ -1,4 +1,5 @@
 require 'byebug'
+require_relative '../patch/string_patch'
 
 module Validators
     module FileValidator
