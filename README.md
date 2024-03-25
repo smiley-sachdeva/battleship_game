@@ -40,4 +40,5 @@ Battleship is a game played between 2 players. Each player is initialized with a
     `./game.rb input.txt`
 
 3. Check the output file (`output.txt`) for the game result.
+4. Run specs: `rspec specs/game_spec.rb`
 
