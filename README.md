@@ -12,6 +12,12 @@ Battleship is a game played between 2 players. Each player is initialized with a
 - Simulates the game based on the provided input
 - Determines the winner and writes the game result to an output file
 
+## Prerequisites
+
+Before running the Battleship game, ensure you have the following prerequisites installed:
+
+- Ruby version 3.1.3
+  
 ## Setup
 
 1. Clone the repository:
