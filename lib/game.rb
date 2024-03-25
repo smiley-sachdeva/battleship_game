@@ -10,7 +10,9 @@ class Game
               :player2_ships, 
               :total_missiles, 
               :player1_moves, 
-              :player2_moves
+              :player2_moves,
+              :player1_grid,
+              :player2_grid
 
   def initialize(file_path)
     return unless valid?(file_path) 
@@ -29,9 +31,6 @@ class Game
     @player2_grid = initialize_grid(@grid_size)
     place_ships(@player1_grid, @player1_ships)
     place_ships(@player2_grid, @player2_ships)
-    
-  # rescue Validators::FileValidator::FileError => e
-  #   p e.message
   end
 
   def play_game

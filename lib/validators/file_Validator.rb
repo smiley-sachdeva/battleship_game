@@ -50,12 +50,8 @@ module Validators
 
         end
 
-        private
-
-        def pluralize(word, count)
-            count == 1 ? word : word + 's'
-        end          
-
+        private      
+        
         def max_ships(grid_size)
             (grid_size ** 2) / 2
         end
