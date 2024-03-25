@@ -1,8 +1,13 @@
 #!/usr/bin/env ruby
 require_relative './lib/game'
 
-raise StandardError, "Invalid file path: #{ARGV[0]}" unless File.exist?(ARGV[0])
-
-
+begin
 game  = Game.new(ARGV[0])
+
+rescue StandardError => e
+    puts "Initialization failed: #{e.message}"
+    exit(1)
+end
+
+#Run the game
 game.play_game
